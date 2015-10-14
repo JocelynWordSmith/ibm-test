@@ -1,0 +1,239 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+html,body { height: 100%; min-height: 100%; }
+
+body {
+  background-image: url("../images/walking-XL.jpg");
+  background-color: rgb(220,220,220) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+
+    #splash-page, #thanks-page{
+      margin-top: 3rem;
+      position: absolute;
+
+      #word-swap-box{
+        display: inline-block;
+        border-bottom: solid 2px black;
+        width: 55%;
+        span {
+          height: 3rem;
+          overflow: hidden;
+        }
+      }
+
+      .header-bound {
+        text-align: center;
+        border-bottom: 1px solid #e5e5e5;
+        background-color: rgba(238,238,238,0.6);
+        width: 100%;
+        padding: 1rem;
+        font-family: Just Another Hand;
+        
+        .btn {
+          font-size: 21px;
+          padding: 14px 24px;
+        }
+
+        img{
+          width: 20%;
+          float: left;
+          margin-bottom: 1rem;
+        }
+        h1 {
+          float: left;
+          font-size: 8rem;
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .button-bound {
+        font-family: Avenir Next;
+        width: 100%;
+
+        button {
+          width: 60%;
+          margin-top: 6rem;
+          margin-left: 20%;
+          background-color: limegreen;
+          font-size: 2.4rem;
+          line-height: 6rem;
+          text-align: center;
+        }
+
+        .login {
+          margin-top: 1rem;
+          font-family: Avenir Next;
+          font-size: 1.5rem;
+          text-align: center;
+          color: aqua;
+
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+
+        }
+    }
+
+  }
+
+  .page-bound {
+    position: absolute;
+    .nav-btn {
+      i {
+        font-size: 2rem;
+        padding: 1rem;
+        float: left;
+        color: limegreen;
+        border-radius: 100%;
+        background-color: rgba(238,238,238,0.8);
+        margin: 1rem;
+        border: solid 1px limegreen;
+      }
+
+    }
+    .icon-box {
+      padding: 1rem;
+
+      img {
+        width: 15%;
+      }
+      
+    }
+    .divide {
+      background-color: rgb(238,238,238);
+      height: 1px;
+      width: 90%;
+      margin: auto;
+    }
+
+    .mobile-info {
+      background-color: rgba(238,238,238,0.8);
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      padding: 1rem;
+      width: 90%;
+      margin: auto;
+      margin-top: 4rem;
+      text-align: center;
+      font-family: Avenir Next;
+      border-radius: 3px;
+
+      p {
+        span {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .basic-info {
+      width: 90%;
+      margin: auto;
+      margin-top: 2rem;
+      .input-group {
+        margin-top: 2rem;
+      }
+      button {
+        margin-top: 2rem;
+        background-color: rgba(238,238,238,0.8);
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        border: solid 1px limegreen;
+        i {
+          color: limegreen;
+        }
+      }
+    }
+  }
+
+  #order-page {
+    .mobile-info {
+      margin-top: 1rem;
+    }
+    .basic-info {
+      .input-group{
+        margin-top: 0.6rem;
+        &.half{
+          width: 50%;
+          float: left
+        }
+      }
+    }
+  }
+
+  .dashboard {
+    .dash-entry {
+      background-color: #fff;
+      border-top: solid .3rem black;
+      margin: .9rem;
+      font-family: Avenir Next;
+      padding: 2rem;
+
+      h2  {
+        width: 50%;
+        float: left;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+
+      }
+      i {
+        float: right;
+        font-size: 2rem;
+      }
+      .spacer {
+        margin-top: 5rem;
+      }
+      span{
+        float: left;
+        clear: both;
+      }
+    }
+
+    .checking {
+      border-color: limegreen;
+      h2, i{
+        color: limegreen;
+      }
+    }
+    .savings {
+      border-color: crimson;
+      h2, i{
+        color: crimson;
+      }
+    }
+    .credit {
+      border-color: cornflowerblue;
+      h2, i{
+        color: cornflowerblue;
+      }
+    }
+    .manage-profile {
+      border-color: black;
+      h2, i{
+        color: black;
+      }
+    }
+    .budgets {
+      border-color: darkmagenta;
+      h2, i{
+        color: darkmagenta;
+      }
+    }
+  }
+
+}
+

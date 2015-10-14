@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IBM app</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+      <div id="splash-page" class="page-bound ">
+        <div class="header-bound">
+          <img src="images/ibc-logo.png">
+          <div class="clearfix"></div>
+          <h1>We do <span id="word-swap-box"><span>Better</span></span></h1>
+          <div class="clearfix"></div>
+        </div>
+        <div class="button-bound">
+          <button class="btn get-started">
+            Let's get started
+            <i class="fa fa-arrow-right"></i>
+          </button>
+          <div class="login">Already a member?</div>
+        </div>
+      </div>
+
+
+
+      <div id="info-page" class="page-bound hidden">
+        <div class="return nav-btn">
+          <i class="fa fa-arrow-left"></i>
+        </div>
+        <div class="pull-right icon-box" >
+        <img class="pull-right" src="images/ibc-icon.png">
+        </div>
+          <div class="clearfix"></div>
+        <div class="divide"></div>
+        <div class="mobile-info">
+          <p><span>W</span>e’re excited to announce the ALL NEW Online & Mobile Banking is now available! Our new system allows you to bank anytime, anywhere: from desktop, mobile and tablet devices – like never before. It's designed to be our most robust, intuitive virtual banking yet.</p>
+          <p><span>W</span>e Do More so you can do more, online.</p>
+        </div>
+        <div class="basic-info">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Full Name</span>
+            <input type="text" class="form-control inpt-grp-1" placeholder="John Smith" aria-describedby="basic-addon1" id="name1">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Email</span>
+            <input type="email" class="form-control inpt-grp-1" placeholder="example@example.com" aria-describedby="basic-addon1" id="email1">
+          </div>
+          <button class="btn pull-right to-order">Get your card <i class="fa fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+
+
+      <div id="login-page" class="page-bound hidden">
+        <div class="down nav-btn">
+          <i class="fa fa-arrow-down"></i>
+        </div>
+        <div class="pull-right icon-box" >
+        <img class="pull-right" src="images/ibc-icon.png">
+        </div>
+          <div class="clearfix"></div>
+        <div class="divide"></div>
+        <div class="basic-info">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Username</span>
+            <input type="text" class="form-control" placeholder="Example123" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Password</span>
+            <input type="password" class="form-control" placeholder="password123" aria-describedby="basic-addon1">
+          </div>
+          <button class="btn pull-right to-dashboard">Login <i class="fa fa-arrow-right"></i></button>
+        </div>
+        </div>
+
+
+
+        <div id="order-page" class="page-bound hidden">
+          <div class="to-info nav-btn">
+          <i class="fa fa-arrow-left"></i>
+        </div>
+        <div class="pull-right icon-box" >
+        <img class="pull-right" src="images/ibc-icon.png">
+        </div>
+          <div class="clearfix"></div>
+        <div class="divide"></div>
+        <div class="mobile-info">
+          <p><span>I</span>t should take about a week to get your card in the mail. Please visit our full site for atm locations and information about savings accounts and life insurance. Once you get your card and activate it, you can login on the main screen and view your account details</p>
+          <p><span>W</span>e Do More Together</p>
+        </div>
+        <div class="basic-info">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Full Name</span>
+            <input id="name2" type="text" class="form-control" placeholder="John Smith" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Email</span>
+            <input id="email2" type="email" class="form-control" placeholder="example@example.com" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Street Address</span>
+            <input type="text" class="form-control" placeholder="1111 street st." aria-describedby="basic-addon1">
+          </div>          
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">City</span>
+            <input type="text" class="form-control" placeholder="Anyplace" aria-describedby="basic-addon1">
+          </div>          
+          <div class="input-group half">
+            <span class="input-group-addon" id="basic-addon1">State</span>
+            <input type="text" class="form-control" placeholder="TX" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group half">
+            <span class="input-group-addon" id="basic-addon1">Zip Code</span>
+            <input type="text" class="form-control" placeholder="12345" aria-describedby="basic-addon1">
+          </div>         
+          <div class="clearfix"></div> 
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Phone Number</span>
+            <input type="text" class="form-control" placeholder="(555) 867-5309" aria-describedby="basic-addon1">
+          </div>
+          <button class="btn pull-right order-card">Order <i class="fa fa-arrow-right"></i></button>
+        </div>
+        </div>
+
+
+
+        <div id="thanks-page" class="page-bound hidden">
+          <div class="header-bound">
+            <img src="images/ibc-logo.png">
+            <div class="clearfix"></div>
+            <h1>Awesome!</h1>
+            <h1>We will be in touch</h1>
+            <div class="clearfix"></div>
+          </div>
+          <div class="button-bound">
+            <button class="btn to-dashboard">
+              Dashboard
+            </button>
+          </div>
+        </div>
+
+          <div class="dashboard hidden">
+            <div class="dash-entry checking">
+              <h2>Checking</h2>
+              <i class="fa fa-usd"></i>
+              <div class="clearfix spacer"></div>
+              <span>Balance: $0.00</span>
+              <span>View Activity</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="dash-entry savings">
+              <h2>Savings Account</h2>
+              <i class="fa fa-money"></i>
+              <div class="clearfix spacer"></div>
+              <span>Balance: $0.00</span>
+              <span>View Activity</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="dash-entry credit">
+              <h2>Credit</h2>
+              <i class="fa fa-credit-card"></i>
+              <div class="clearfix spacer"></div>
+              <span>Balance: $0.00</span>
+              <span>View Activity</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="dash-entry manage-profile">
+              <h2>Profile</h2>
+              <i class="fa fa-cog"></i>
+              <div class="clearfix spacer"></div>
+              <span>Balance: $0.00</span>
+              <span>Edit Information</span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="dash-entry budgets">
+              <h2>Budgets</h2>
+              <i class="fa fa-bar-chart"></i>
+              <div class="clearfix spacer"></div>
+              <span>Remaining: $0.00</span>
+              <span>Manage Budget</span>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+      </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+
+    <!-- endbuild -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  </body>
+</html>
